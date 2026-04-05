@@ -1,4 +1,4 @@
-/* RESET */
+
 *{
     margin: 0;
     padding: 0;
@@ -67,13 +67,14 @@ a{
 .home-info{
     max-width: 600px;
     width: 100%;
+    text-align: left; 
 }
-
 .home-info h1{
     font-size: 60px;
     line-height: 1.2;
     background: linear-gradient(90deg, #ffffff, #ff4d6d);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -96,9 +97,9 @@ a{
 /* BUTTON + SOCIAL */
 .btn-sci{
     display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;  
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .btn{
@@ -121,16 +122,16 @@ a{
 }
 
 .sci a{
-    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
     border: 2px solid crimson;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 18px;
     transition: 0.3s;
 }
-
 .sci a:hover{
     background: white;
     color: crimson;
@@ -195,7 +196,7 @@ section{
 .about-container h2{
     font-size: 32px;
     margin-bottom: 20px;
-    color: #ff4d6d;
+    color: #ffffff;
 }
 
 .about-intro{
@@ -213,6 +214,46 @@ section{
 .about-container span{
     color: #ff4d6d;
     font-weight: 500;
+}
+
+/* SKILLS */
+.skills{
+    padding: 100px 9%;
+    text-align: center;
+}
+
+.skills h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* SKILL BOX */
+.skill{
+    padding: 12px 25px;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    cursor: default;
+}
+
+.skill:hover{
+    background: crimson;
+    color: white;
+    transform: translateY(-3px);
+}
+.skills{
+    padding: 100px 9%;
 }
 
 /* PROJECTS */
