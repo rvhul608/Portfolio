@@ -363,6 +363,52 @@ section{
     font-size: 14px;
     opacity: 0.7;
 }
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+form input,
+form textarea {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 2px solid crimson;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+form textarea {
+    border-radius: 15px;
+    resize: vertical;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaa;
+}
+
+form button {
+    padding: 10px 25px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px crimson;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: white;
+    color: crimson;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px){
